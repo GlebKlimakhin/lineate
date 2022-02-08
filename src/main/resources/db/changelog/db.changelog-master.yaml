@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: eshmakov
+      comment: init base tables
+      sqlFile:
+        encoding: UTF-8
+        path: migrations/001-create-schema.sql
+        relativeToChangelogFile: true
+  - changeSet:
+      id: 2
+      author: eshmakov
+      comment: fill in tables
+      sqlFile:
+        encoding: UTF-8
+        path: migrations/002-fill-in-tables.sql
+        relativeToChangelogFile: true
